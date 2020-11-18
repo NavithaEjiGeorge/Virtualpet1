@@ -33,10 +33,10 @@ if(keyDown(UP_ARROW)){
   dog.addImage(dogHappy)
 }
 if(keyDown(DOWN_ARROW)){
-  DeleteStock(foodS)
+  addStock(foodS)
   dog.addImage(dogHappy)
 }
-text(foodS,200,200)
+text("Food remaining" + foodS,300,200)
 }
 function readStock(data){
   foodS=data.val()
@@ -63,7 +63,7 @@ function writeStock(x){
     Food:x
   });
 }
-function DeleteStock(x){
+function addStock(x){
   if(x<20){
     x=0
   }else{
