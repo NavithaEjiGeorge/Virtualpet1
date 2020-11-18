@@ -54,7 +54,7 @@ function readStock(data){
  // }
 //}
 function writeStock(x){
-  if(x>=0){
+  if(x<=0){
     x=0
   }else{
     x=x-1;
@@ -64,7 +64,7 @@ function writeStock(x){
   });
 }
 function addStock(x){
-  if(x<20){
+  if(x>=20){
     x=0
   }else{
     x=x-1;
